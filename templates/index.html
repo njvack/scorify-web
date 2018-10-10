@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Scorify web tool</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>
+      Welcome to the Scorify web tool!
+    </h1>
+    <p>
+      For documentation, see <a href="https://github.com/njvack/scorify">the Scorify homepage</a>. Want to see how this works? <a href="https://glitch.com/edit/#!/scorify-web">Remix it</a>.
+    </p>
+    <form method="post" action="{{ url_for('score') }}">
+      <h4>
+        <label for="scoresheet">Paste in a scoresheet (CSV)</label>
+      </h4>
+      <textarea name="scoresheet"></textarea>
+      <h4>
+        <label for="data">Paste in your data (CSV)</label>
+      </h4>
+      <textarea name="data"></textarea>
+      <p>
+        <input type="submit" value="Score that data!" name="score"/>
+      </p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "install": {
+    "include": [
+      "^\\.env$"
+    ]
+  },
+  "restart": {
+    "exclude": [
+      "^public/"
+    ],
+    "include": [
+      "\\.html$",
+      "\\.coffee$",
+      "\\.py$",
+      "\\.json$"
+    ]
+  },
+  "throttle": 1000
+}

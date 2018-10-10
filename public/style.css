@@ -1,0 +1,12 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: sans-serif;
+  margin: 2em;
+}
+
+textarea {
+  width: 90%;
+  height: 20em;
+}
+
